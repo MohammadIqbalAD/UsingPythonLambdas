@@ -21,8 +21,20 @@ git clone <repository-url>
 cd <repository-directory>
 ```
 
-### Step 2: Review the Boilerplate Code
-Open the project in your IDE. Familiarize yourself with the Lambda handler logic and how it utilizes the `boto3` library to communicate with AWS services.
+### Step 2: Review Code and Setup Virtual Environment
+Open the project in your IDE. Familiarize yourself with the Lambda handler logic and how it utilizes the `boto3` library to communicate with AWS services. Follow the steps below to setup your virtual environment:
+1. Create the virtual environment
+```bash
+python -m venv venv
+```
+2. Activate the environment
+```bash
+.\venv\Scripts\activate
+```
+3. Install packages
+```bash
+pip install -r requirements.txt
+```
 
 ### Step 3: Create a DynamoDB Table
 1.  Log in to the **AWS Management Console** and navigate to **DynamoDB**.
