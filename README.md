@@ -50,7 +50,6 @@ pip install -r requirements.txt
 3.  Configure the following:
     * **Function name:** `your_name_function` (e.g., `john_doe_lambda`).
     * **Runtime:** Python 3.13.
-    * **Architecture:** x86_64.
 4.  Click **Create function**.
 
 ### Step 5: Update Environment Variables
