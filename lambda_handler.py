@@ -6,9 +6,10 @@ from lambda_service import FoodItemService
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
-def lambda_handler(event, context):
-    service = FoodItemService()
-    
+# Initialise once outside the handler so warm invocations can reuse it.
+service = FoodItemService()
+
+def lambda_handler(event, context):    
     try:
         # For now, we are triggering the "Get All" functionality
         items = service.get_all_food_items()
