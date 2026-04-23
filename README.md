@@ -108,6 +108,13 @@ Your Lambda uses an environment variable to determine which DynamoDB table to us
     |---|---|
     | `TABLE_NAME` | `your_name_table` |
 
+
+Click the Code tab
+Scroll down to the Runtime settings section
+Click Edit
+Change Handler from lambda_function.lambda_handler to lambda_handler.lambda_handler
+Click Save
+
 ### Step 6: Grant IAM Permissions
 
 To allow the Lambda to interact with DynamoDB:
