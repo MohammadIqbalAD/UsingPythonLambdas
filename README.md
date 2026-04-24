@@ -88,7 +88,7 @@ Then set up your virtual environment:
 1. Log in to the **AWS Management Console** and navigate to **DynamoDB**.
 2. In the sidebar, click **Tables**, then click **Create table**.
 3. Configure the following settings:
-    - **Table name:** `your_name_table` (e.g., `john_doe_table`)
+    - **Table name:** `YourNameTable` (e.g., `JohnDoeTable`)
     - **Partition key:** `ItemID` (Type: `String`)
 4. Keep all other settings as default and click **Create table**.
 
