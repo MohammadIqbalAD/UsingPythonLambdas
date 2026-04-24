@@ -146,13 +146,7 @@ To allow the Lambda to interact with DynamoDB:
 1. Go to the **Test** tab.
 2. Create a new test event.
 3. Click **Test**.
-4. Confirm a successful response.
-
-### Step 10: Verify Data in DynamoDB
-
-Return to the **DynamoDB** console, select your table, and click **Explore table items** to confirm the Lambda successfully interacted with the table.
-
----
+4. Confirm a successful expected response.
 
 ## Core Task: Extending the Function
 
