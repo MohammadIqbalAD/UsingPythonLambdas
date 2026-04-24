@@ -73,6 +73,10 @@ Then set up your virtual environment:
         ```bash
         .\venv\Scripts\activate
         ```
+        If you encounter a permission issue when running the above command in PowerShell, run the following command to allow scripts to be executed and try again.
+        ```bash
+        Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+        ```
 
 3. **Install** dependencies:
     ```bash
