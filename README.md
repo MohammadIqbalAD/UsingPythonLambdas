@@ -111,7 +111,7 @@ Your Lambda uses an environment variable to determine which DynamoDB table to us
 
     | Key | Value |
     |---|---|
-    | `TABLE_NAME` | `your_name_table` |
+    | `TABLE_NAME` | `YourNameTable` |
 
 
 Click the Code tab
