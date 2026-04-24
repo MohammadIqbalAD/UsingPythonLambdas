@@ -36,6 +36,7 @@ This lab simplifies some patterns for learning purposes:
 Before starting, ensure your local environment meets the following requirements:
 
 - **Python:** version 3.13 or higher
+- **Git**: [Git for Windows](https://git-scm.com/install/windows)
 - **IDE:** [PyCharm](https://www.jetbrains.com/pycharm/) or [VS Code](https://code.visualstudio.com/) is recommended
 - **AWS Account:** [Provided here](https://answerdigital.awsapps.com/start) for the duration of the lab
 
