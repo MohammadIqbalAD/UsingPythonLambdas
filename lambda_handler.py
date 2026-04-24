@@ -1,6 +1,6 @@
 import json
 import logging
-from lambda_service import FoodItemService
+from food_service import FoodItemService
 
 # Set up logging
 logger = logging.getLogger()
