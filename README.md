@@ -177,6 +177,12 @@ Route logic in the handler using the event action:
 ```python
 action = event.get("action")
 ```
+Then when testing the lambda function, provide the appropriate Event JSON like so:
+```python
+{
+  "action": "delete"
+}
+```
 
 > **Best practice:** In production, each operation would typically be a separate Lambda mapped to its own API endpoint.
 
