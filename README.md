@@ -100,6 +100,8 @@ Then set up your virtual environment:
     - **Function name:** `your_name_function` (e.g., `john_doe_lambda`)
     - **Runtime:** Python 3.13
 4. Click **Create function**.
+5. Click the **Code** tab, Scroll down to the **Runtime settings** section and Click **Edit**
+6. Change **Handler** from `lambda_function.lambda_handler` to `lambda_handler.lambda_handler`. Click **Save**.
 
 ### Step 5: Set Environment Variables
 
@@ -112,13 +114,6 @@ Your Lambda uses an environment variable to determine which DynamoDB table to us
     | Key | Value |
     |---|---|
     | `TABLE_NAME` | `YourNameTable` |
-
-
-Click the Code tab
-Scroll down to the Runtime settings section
-Click Edit
-Change Handler from lambda_function.lambda_handler to lambda_handler.lambda_handler
-Click Save
 
 ### Step 6: Grant IAM Permissions
 
