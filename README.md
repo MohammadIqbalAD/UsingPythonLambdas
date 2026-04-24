@@ -92,7 +92,17 @@ Then set up your virtual environment:
     - **Partition key:** `ItemID` (Type: `String`)
 4. Keep all other settings as default and click **Create table**.
 
-### Step 4: Create the Lambda Function
+### Step 4: Create an Item in the DynamoDB Table
+
+1. Log in to the **AWS Management Console** and navigate to **DynamoDB**.
+2. In the sidebar, click **Tables**, then select your newly created table.
+3. Click **Actions** and then **Create** item.
+4. Provide **ItemID** a value of **1**.
+5. Click **Add new attribute**, then **String**
+6. Set **Attribute name** as **Name** and provide it a value (e.g **Chicken Burger**)
+7. Click **Create item**.
+
+### Step 5: Create the Lambda Function
 
 1. Navigate to the **Lambda** service in the AWS Console.
 2. Click **Create function** and select **Author from scratch**.
@@ -103,7 +113,7 @@ Then set up your virtual environment:
 5. Click the **Code** tab, Scroll down to the **Runtime settings** section and Click **Edit**
 6. Change **Handler** from `lambda_function.lambda_handler` to `lambda_handler.lambda_handler`. Click **Save**.
 
-### Step 5: Set Environment Variables
+### Step 6: Set Environment Variables
 
 Your Lambda uses an environment variable to determine which DynamoDB table to use.
 
@@ -115,7 +125,7 @@ Your Lambda uses an environment variable to determine which DynamoDB table to us
     |---|---|
     | `TABLE_NAME` | `YourNameTable` |
 
-### Step 6: Grant IAM Permissions
+### Step 7: Grant IAM Permissions
 
 To allow the Lambda to interact with DynamoDB:
 
@@ -124,21 +134,21 @@ To allow the Lambda to interact with DynamoDB:
 3. Click **Add permissions → Attach policies**.
 4. Search for and select `AmazonDynamoDBFullAccess`, then click **Add permissions**.
 
-### Step 7: Deploy the Code
+### Step 8: Deploy the Code
 
 1. Navigate back to the **Code** tab of your Lambda function.
 2. Create a `.zip` file containing your Python files.
 3. Click the **Upload from** dropdown and select **.zip file**.
 4. Upload your file and click **Save**.
 
-### Step 8: Test the Function
+### Step 9: Test the Function
 
 1. Go to the **Test** tab.
 2. Create a new test event.
 3. Click **Test**.
 4. Confirm a successful response.
 
-### Step 9: Verify Data in DynamoDB
+### Step 10: Verify Data in DynamoDB
 
 Return to the **DynamoDB** console, select your table, and click **Explore table items** to confirm the Lambda successfully interacted with the table.
 
